@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'EBGaramond-Regular';
+  src: url('EBGaramond-Regular.svg#EBGaramond-Regular') format('svg'),
+       url('EBGaramond-Regular.ttf') format('truetype'),
+       url('EBGaramond-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EBGaramond-VariableFont_wght';
+  src: url('EBGaramond-VariableFont_wght.eot');
+  src: url('EBGaramond-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
+       url('EBGaramond-VariableFont_wght.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
