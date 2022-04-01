@@ -4,7 +4,7 @@
        url('Caveat-Regular.ttf') format('truetype'),
        url('Caveat-Regular.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-style:cursive;
 }
 
 @font-face {
@@ -13,6 +13,6 @@
   src: url('Caveat-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
        url('Caveat-VariableFont_wght.woff2') format('woff2');
   font-weight: normal;
-  font-style: normal;
+  font-style: cursive;
 }
 

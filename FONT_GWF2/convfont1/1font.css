@@ -4,7 +4,7 @@
        url('EBGaramond-Regular.ttf') format('truetype'),
        url('EBGaramond-Regular.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-style: serif;
 }
 
 @font-face {
@@ -13,6 +13,6 @@
   src: url('EBGaramond-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
        url('EBGaramond-VariableFont_wght.woff2') format('woff2');
   font-weight: normal;
-  font-style: normal;
+  font-style: serif;
 }
 
