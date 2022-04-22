@@ -12,43 +12,27 @@
         font-size: 20px; 
          }
 
+         a:visited {
+         color: blue; 
+         } 
+         a:hover {
+         color: red;  
+         } 
+
+
         
-        .menu {  padding: 10px ; }
-        .menu__ {   
-         margin: 0 10px 0 10px;border-right-style: solid; 
-         border-color: black; padding-right:15px;  
-         }
-        
-        .menu2 {padding: 10px ;  }
-        .menu2__ {  display: inline;  margin: 0 10px 0 10px;  
+        .menu2 {padding: 10px ;  } /* cделано через display: inline-block - вывод элементов в строку, разделить сделан border-right-style- рамкой справа, как по мне удобный*/
+        .menu2__ {  display: inline-block;  margin: 0 10px 0 10px;  
         border-right-style: solid; border-color: black; padding-right:15px; }
 
 
-       .line { border-right: 3px solid #000000; margin-left: 30 px;padding-left: 20px;   
+       .line { border-right: 3px solid #000000; margin-left: 30 px;padding-left: 20px;   /* текст размещён с помощью padding и  margin,text-align:center, разделитель cделан через  border-right- размещающий линию справа от блочного элемента, не очень удобно, при изменении отсупов плывёт разделитель  */
              padding-right:15px;}
 
-       .last_child { border-left: 1px solid; padding: 10px;}
-       .last_child: last-child {
-	    border-left: none; 
-                
-       
-        }
-
-       
     </style >
-
-
 </head>
 <body>
     
-        <div class="menu">
-            
-            <a href="https://ru.wikipedia.org/wiki/Тюльпан" class="menu__" >первая ссылка</a>
-            <a href="http://great-tv.tv/turetskie-serials/mechty-i-zhizni-turkish-series" class="menu__">вторая ссылка</a>
-            <a href="https://www.youtube.com" class="menu__">третья ссылка</a>
-            <a href="https://millionroz.by/tsvety/tyulpany/" class="menu__">четвёртая ссылка</a>
-            <a href="https://www.novoeradio.by" class="menu__">пятая ссылка</a>
-        </div>
 
         <div class="menu2">
             <a href="https://www.novoeradio.by" class="menu2__">первая ссылка</a>
@@ -59,16 +43,7 @@
         </div>
 
 
-        <div class="last_child">
-            <a href="http://great-tv.tv/turetskie-serials/mechty-i-zhizni-turkish-series" class="menu2__">первая ссылка</a>
-            <a href="https://www.youtube.com" class="menu2__">вторая ссылка</a>
-            <a href="https://millionroz.by/tsvety/tyulpany/" class="menu2__">третья ссылка</a>
-            <a href="https://www.youtube.com" class="menu2__">четвёртая ссылка</a>
-            <a href="https://ru.wikipedia.org/wiki/Тюльпан" class="menu2__">пятая ссылка</a>
-
-        </div>
-
-        <div style="padding-top: 10px;padding-bottom: 4px;padding-right: 19px;">
+        <div style="padding-top: 10px;padding-bottom: 4px;padding-right: 17px;">
             <a href="http://great-tv.tv/turetskie-serials/mechty-i-zhizni-turkish-series" class="line">первая ссылка</a>
             <a href="https://ru.wikipedia.org/wiki/Тюльпан" class="line">вторая ссылка</a>
             <a href="https://www.youtube.com" class="line">третья ссылка</a>
