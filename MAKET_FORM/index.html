@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+
+input[type=text], textarea{
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+ }
+
+ label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  float: left;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+</style>
+</body>
+
+<p>Для публикации вашей статьи заполните,пожалуйста,следующую форму:</p>
+    <br>
+    <div style="conteiner">
+        <form action="https://fe.it-academy.by/TestForm.php" method="get"> 
+
+
+
+   <div class="row">
+      <div class="col-25">
+        <label for="name">Название статьи:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="name">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="рубрика">Рубрика:</label>
+      </div>
+      <div class="col-75">
+        <select id="руб" name="рубрика">
+          <option value="progr">Программирование </option>
+          <option value="graf">Графика и дизайн</option>
+          <option value="komp">Компьютерная техника</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="publish">Публикация:</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" name="answer" value="1">на сайте
+        <input type="radio" name="answer" value="2"> в журнале 
+        <input type="radio" name="answer" value="3">на сайте и в журнале
+        <input type="hidden" name="votenum" value="111">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Разрешить комментарии: </label>
+      </div>
+      <div class="col-75">
+        <input type="checkbox" name="onlynew" checked>
+      </div>
+    </div>
+
+    <div style="row">
+    <div style="col-25"><label for="fname" class="label">Текст статьи:</label> </div> 
+    <div style="col-75"><textarea name="text"></textarea><br>
+    
+    <input type="submit" value="Отправить">
+    </div>
+</div>
+</div>
+</form>
+
+</html>
