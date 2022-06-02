@@ -6,13 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANIMATION</title>
 <style>
+html, body {
+  width: 100%;
+  height:100%;
+}
 
+body {
+    background: linear-gradient(-45deg, #f0ddd7, #e0adc1, #a2d1e2, #6cdfc4);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .content {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    width: 1500px;
-}
+   }
 
 @keyframes MyAnimation3a
 {
@@ -61,8 +81,8 @@
 
 
 .animation img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 300px;
   margin: auto;
   border-radius: 40%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -95,6 +115,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 border-radius:50%;
 
 }
+
+
 </style>
 
 </head>
