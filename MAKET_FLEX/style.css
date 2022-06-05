@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;       
+}
+
+li {
+    list-style-type: none;
+}
+.header, .footer {
+    text-align: center;
+    background-color:bisque;
+    padding: 20px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    background: url('веточка2.jpg') right top repeat-y;
+               
+}
+
+.content img {
+   
+    padding: 10px;
+}
+
+.content {
+   
+    padding-top:  10px;
+    padding-bottom: 10px;
+}
+
+
+.main {
+    padding-right: 50px;
+    background-color: plum;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+      flex-grow: 1; 
+      order: 1;
+    }
+    .content {
+      width: 100%;
+      flex-grow: 1;
+      order: 4;
+    } 
+    
+    .main {
+        width: 100%;
+        flex-grow: 1;
+        order: 7;
+      } 
+      
+    .footer {
+        flex-grow: 1;
+        order: 9;
+    }
+  }
+
+
+@media screen and (max-width: 420px){
+    .wrap {
+    flex-direction: column;
+    background-image: none;
+}
+  }
+
