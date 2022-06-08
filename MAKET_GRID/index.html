@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Grid Layout в CSS3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        }
+
+      .grid-container {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          'header'
+          '.'
+          'content'
+          '.'
+          'menu'
+          '.'
+
+          'sidebar'
+          '.'
+          'footer';
+        grid-template-columns: 1fr;
+     
+      }
+      .header {
+        grid-area: header;
+        background-color:  lemonchiffon;
+        padding: 20px;
+      }
+      .menu {
+        grid-area: menu;
+        background-color: plum;
+        margin-right: -5px;
+        padding-left: 7px;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-image: url('веточка2.jpg');
+       
+      }
+      .content {
+        grid-area: content;
+       
+         padding-top:  10px;
+         padding-bottom: 10px;
+
+    }
+
+     .content img {
+        padding: 10px;
+     }
+
+      .footer {
+        grid-area: footer;
+        background-color:  lemonchiffon;
+        padding: 20px;
+      }
+     
+
+      h1 {
+        text-align: center;
+      }
+      @media screen and (min-width: 468px) {
+        .grid-container {
+          height: 100vh;
+          display: grid;
+          grid-template-areas:
+            'header header header header header'
+            '. . . . .'
+            'menu . content . sidebar'
+            '. . . . .'
+            'footer footer footer footer footer';
+          grid-template-columns: 130px 5px 1fr 5px 130px;
+          grid-template-rows: 90px 5px 1fr 5px 90px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+          <i><h1>В каждой душе цветут свои цветы</i></h1>
+        </div>
+            <div class="content">
+                <img src="тюльпаны.jpg"; style="float: left"; hspace='10' vspace='10';>
+                <i><strong>Тюльпа́н (лат. Túlipa)</strong></i> — род многолетних травянистых луковичных растений семейства Лилейные (Liliaceae),
+                в современных систематиках включающий более 80 видов. Центр происхождения и наибольшего  разнообразия видов тюльпанов 
+                — горы северного Ирана, Памиро-Алай и Тянь-Шань. За 10—15 миллионов лет эволюции тюльпаны расселились до Испании и Марокко на западе,
+                до Забайкалья на востоке и до Синайского полуострова на юге. На севере интродуцированные человеком популяции тюльпана лесного достигли Шотландии
+                и южного побережья Скандинавии. Все тюльпаны — типичные геофиты-эфемероиды, приспособившиеся к жизни в горных, степных и пустынных 
+                местностях с жарким сухим летом, холодной зимой и короткой тёплой и влажной, дождливой весной.
+                Развитие тюльпана от семени до цветущего растения занимает от трёх до семи лет. 
+                Смена поколений луковиц, в отличие от нарциссов, происходит ежегодно. 
+                Во время недолгой весенней вегетации тюльпан цветёт, плодоносит и закладывает под землёй молодые луковицы, а отцветшая луковица умирает.<br>
+                В период летнего покоя, а у некоторых видов и зимой, внутри луковицы, формируются зачатки побега и цветка будущего года. Осенью луковица
+                даёт корни и завершает закладку плодоносящего побега.<br>
+                Тюльпан Геснера и его гибриды с тюльпаном Фостера — наиболее экономически важная луковичная декоративная культура,
+                выращиваемая и в открытом грунте, и на срезку в теплицах.
+
+                 в современных систематиках включающий более 80 видов. Центр происхождения и наибольшего  разнообразия видов тюльпанов 
+                 — горы северного Ирана, Памиро-Алай и Тянь-Шань. За 10—15 миллионов лет эволюции тюльпаны расселились до Испании и Марокко на западе,
+                 до Забайкалья на востоке и до Синайского полуострова на юге. На севере интродуцированные человеком популяции тюльпана лесного достигли Шотландии
+                 и южного побережья Скандинавии. Все тюльпаны — типичные геофиты-эфемероиды, приспособившиеся к жизни в горных, степных и пустынных 
+                 местностях с жарким сухим летом, холодной зимой и короткой тёплой и влажной, дождливой весной.
+                 Развитие тюльпана от семени до цветущего растения занимает от трёх до семи лет. 
+                 Смена поколений луковиц, в отличие от нарциссов, происходит ежегодно. 
+                Во время недолгой весенней вегетации тюльпан цветёт, плодоносит и закладывает под землёй молодые луковицы, а отцветшая луковица умирает.<br>
+           
+            </div>
+                <div class="menu">
+                    <strong>Cодержание:</p></strong> <ul type="disc"> 
+                        <ul>
+                        <li><a href="https://ru.wikipedia.org/wiki/Тюльпан">Этимология </a> </li>
+                        <li> <a href="http://great-tv.tv/turetskie-serials/mechty-i-zhizni-turkish-series">Распростронение </a> </li>
+                        <li> <a href="https://centerfm.by/ru/">Описание </a> </li> 
+                        <li> <a href="https://millionroz.by/tsvety/tyulpany/">Систиматика</a> </li>
+                        <li> <a href="http://htmlbook.ru/html">История появления </a></li>
+                        <li> <a href="https://www.mini.by/ru_BY/home.html">Арготехника </a></li>
+                        <li> <a href="https://ru.wikipedia.org/wiki/Растения">Комментарии </a></li>
+                        <li> <a href="https://centerfm.by/ru/">Использование</a></li>
+                        <li> <a href="https://centerfm.by/ru/">Классификация</a></li>
+                        <li> <a href="https://ru.wikipedia.org/wiki/Тюльпан">Виды</a> </li>
+                        <li> <a href="https://www.youtube.com">Примечания </a></li>
+                        <li> <a href="https://www.novoeradio.by">Источники </a></li>
+                        <li> <a href="https://www.youtube.com">Литература </a></li>
+                       </ul>
+                </div>
+                    <div class="sidebar"></div>
+                        <div class="footer">
+                            <i><h1>У термина "тюльпан" существуют и другие значения...</i></h1>
+                        </div>
+    </div>
+  </body>
+</html>
