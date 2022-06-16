@@ -6,6 +6,7 @@
     
     body {
         font-family: 'Rubik';
+        position: relative;
     
     }
 
@@ -18,6 +19,7 @@
     .wrap {
         width: 1550px;
         margin: 0 auto;
+        position: relative;
         background-image: url(slide/fon-tekstura-uzor-peryshki.jpg);
        
         
@@ -82,14 +84,11 @@
       color: inherit;
       text-decoration: none;
       padding-bottom: 2px;
-
     }
     
-    
+  /*menu_*/
 
-    /*menu_*/
-
-    .menu_top { 
+  .menu_top { 
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -101,27 +100,34 @@
     .menu_top a {
         
         color: white;
-        font-size: 20px;
-        position: relative;
+        font-size: 20px; 
+        position: relative; 
         cursor: pointer;
-        line-height: 2; /*задаём высоту строки*/   
-    } 
+        line-height: 2; 
+        text-decoration: none; 
+        } 
     
-
-    .menu_top a:after {
+    .menu_top a::after  {
         display: block;
         position: absolute;
-        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-        width: 0;/*задаём длинну линии до наведения курсора*/
-        height: 3px; /*задаём ширину линии*/
-        background-color: #f8f6f8; /*задаём цвет линии*/
+        left: 0; 
+        width: 0;
+        height: 2px; 
+        background-color:white;
         content: "";
-        transition: width 0.3s ease-out; /*задаём время анимации*/
-    }
+        transition: width 0.3s ease-out; 
+        } 
+
+        .menu_top a:hover:after,
+        .menu_top a:focus:after { width: 100%; 
+        } 
     
-    .menu_top a:hover:after,
-    .menu_top a:focus:after {
-        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+
+    .menu_top img {
+        width: 90px;
+        height: 80px;
+       margin-left: 455px;
+       padding-bottom: 10px;
     }
     
     /*slaid*/
@@ -165,16 +171,10 @@
     .popular .content li {
         width: 300px;
         height: 420px;
+        margin-bottom: 25px;
         margin: 10px;
         box-shadow: 0 0 20px rgba(43, 42, 42, 0.5);
         background-color: white;
-        border: 1px solid #F1E7E8; 
-    }
-    
-
-    .popular .content li:hover {
-        
-        border: 2px solid #000000; 
     }
     
    
@@ -182,22 +182,26 @@
         text-align: center;
         display: flex;
         justify-content: space-between;
-        position: relative;
-        margin-bottom: 35px;
+        padding: 20px;
+        text-transform: uppercase;
     }
    
-   
+    
     /*footer*/
 
 
     .footer {
         background-color: black;
-        color: white; 
-        height: 400px; 
+        color: white;
+        height: 400px;
     }
 
     .footer .content {
          text-align: left;
+         display: flex;
+         justify-content: space-between ;
+         padding: 10px;
+         margin: 10px;
     }
 
     .footer .contener {
@@ -233,51 +237,41 @@
         }
 
 
-     .content  li.name_footer  { 
-        padding-bottom: 30px;
+        .footer a {
+            color: white;
+        }
+        .footer a:hover {
+            color: #F08080;
+        }
+    
+    .content  li.name_footer  { 
+    padding-bottom: 30px;
 
-     }
-    .footer .content {
-         
-         display: flex;
-         justify-content: space-between ;
-         padding: 10px;
-         margin: 10px;
     }
-
-    .footer a {
-        color: white;
-    }
-    .footer a:hover {
-        color: bisque;
-    }
-
 
     [data-tooltip] {
-    position: relative; /* Относительное позиционирование */ 
-   }
-   [data-tooltip]::after {
-    content: attr(data-tooltip); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    width: 150px; /* Ширина подсказки */
-    left: 0; top: 0; /* Положение подсказки */
-    background: #f7f9fa; /* Синий цвет фона */
-    color: rgb(3, 3, 3); /* Цвет текста */
-    padding: 0.5em; /* Поля вокруг текста */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
-    pointer-events: none; /* Подсказка */
-    opacity: 0; /* Подсказка невидима */
-    transition: 1s; /* Время появления подсказки */
-   } 
-   [data-tooltip]:hover::after {
-    opacity: 1; /* Показываем подсказку */
-    top: 2em; /* Положение подсказки */
-   }
-
-   [data-tooltip] img {
-    width: 40px;
-    height: 40px;
-    margin-top: 80px;
-    margin-right: 120px;
-    
-   }
+        position: relative; /* Относительное позиционирование */ 
+       }
+       [data-tooltip]::after {
+        content: attr(data-tooltip); /* Выводим текст */
+        position: absolute; /* Абсолютное позиционирование */
+        width: 150px; /* Ширина подсказки */
+        left: 0; top : 0px; /* Положение подсказки */
+        background: white; /* Синий цвет фона */
+        color:black; /* Цвет текста */
+        padding: 0.5em; /* Поля вокруг текста */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+        pointer-events: none; /* Подсказка */
+        opacity: 0; /* Подсказка невидима */
+        transition: 1s; /* Время появления подсказки */
+       } 
+       [data-tooltip]:hover::after {
+        opacity: 1; /* Показываем подсказку */
+        top: 2em; /* Положение подсказки */
+       }
+       [data-tooltip] img {
+        width: 40px;
+        height: 40px;
+        margin-top: 80px;
+        margin-right: 120px;
+       }
