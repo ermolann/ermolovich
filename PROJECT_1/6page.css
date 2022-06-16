@@ -147,7 +147,17 @@
         height: 450px;
         box-shadow: 0 0 20px rgba(43, 42, 42, 0.5);
         background-color: white;
+        border: 2px solid;
+        border-color:darkgrey ;
     }
+
+    .content .katalog li:hover {
+        
+        border-color: black;
+      
+    }
+
+
 
     .content ul {
         margin-left: 90px;
